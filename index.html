@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Retro Radio | Your Classic Sound Companion</title>
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="Experience the nostalgia of classic radio with Retro Radio. Discover vintage tunes, stylish designs, and unmatched quality." />
+    <link rel="shortcut icon" href="images/Screenshot 2023-08-14 184021.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        header {
+            background-image: url('images/pexels-cottonbro-studio-4480537.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        header h1, header h2 {
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+        
+    </style>
+    <script>
+        src="script.js"
+
+    function rateArticle(star, rating) {
+        // Change the color of clicked star and all previous stars
+        var stars = star.parentElement.getElementsByClassName("star");
+        for (var i = 0; i < stars.length; i++) {
+            if (i < rating) {
+                stars[i].classList.add("rated");
+            } else {
+                stars[i].classList.remove("rated");
+            }
+        }
+        
+        // You can send the rating data to the server here if needed
+    }
+</script>
+
+
+</head>
+<body>
+    <header>
+        
+        <h1>Retro Radio</h1>
+        <h2>Your Classic Sound Companion</h2>
+        
+    </header>
+    
+    <main>
+        <section id="news">
+            <h3>Discover the Vintage Experience</h3>
+            <p>Immerse yourself in the charm of classic radio. Unearth timeless melodies, elegant designs, and unparalleled quality.</p>
+           
+            <!-- First Article -->
+            <article>
+                <h4>Rediscover Nostalgia with Retro Radio</h4>
+                <p>by Radio Enthusiast<br /><time datetime="2023-08-15">August 15, 2023</time></p>
+                <p> Step back in time and relive the golden era of radio with Retro Radio. Dive into the sounds of yesteryears and embrace a timeless musical journey</p>
+            </article>
+             <!-- First Article -->
+<article>
+    <h4>Rediscover Nostalgia with Retro Radio</h4>
+    <p>by Radio Enthusiast<br /><time datetime="2023-08-15">August 15, 2023</time></p>
+    <p>Step back in time and relive the golden era of radio with Retro Radio. Dive into the sounds of yesteryears and embrace a timeless musical journey</p>
+    <!-- Star Rating -->
+    <div class="rating">
+        <span class="star" onclick="rateArticle(this, 1)">&#9733;</span>
+        <span class="star" onclick="rateArticle(this, 2)">&#9733;</span>
+        <span class="star" onclick="rateArticle(this, 3)">&#9733;</span>
+        <span class="star" onclick="rateArticle(this, 4)">&#9733;</span>
+        <span class="star" onclick="rateArticle(this, 5)">&#9733;</span>
+    </div>
+</article>
+            <!-- Second Article -->
+            <article>
+                <h4>Experience Unmatched Sound Quality</h4>
+                <p>by Audio Expert<br /><time datetime="2023-08-18">August 18, 2023</time></p>
+                <p>With state-of-the-art audio technology, Retro Radio delivers crystal-clear sound that captures the authenticity of classic broadcasts. Immerse yourself in rich, dynamic melodies.</p>
+                <div class="rating">
+        <span class="star" onclick="rateArticle(this, 1)">&#9733;</span>
+        <span class="star" onclick="rateArticle(this, 2)">&#9733;</span>
+        <span class="star" onclick="rateArticle(this, 3)">&#9733;</span>
+        <span class="star" onclick="rateArticle(this, 4)">&#9733;</span>
+        <span class="star" onclick="rateArticle(this, 5)">&#9733;</span>
+    </div>
+            </article>
+            
+        </section>
+       
+
+        
+        <aside id="sidebar">
+            <h3 class="new-feature">Stay Connected</h3>
+            <form action="subscribe.php" method="post">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+            <figure>
+                <figcaption>Rediscover the magic of classic radio.</figcaption>
+            </figure>
+            <h3>Did You Know…?</h3>
+            <p>Listening to timeless tunes can transport you to a different era and evoke cherished memories. Let Retro Radio be your portal to the past.</p>
+        </aside>
+    </main>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="company.html">Company</a></li>
+            </ul>
+        </nav>
+
+        
+        <p><small>Retro Radio Inc.</small></p>
+    </footer>
+</body>
+</html>

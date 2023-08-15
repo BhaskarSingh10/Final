@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Feedback | Retro Radio</title>
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="Share your feedback about Retro Radio." />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <h1>Feedback</h1>
+        <h2>We Value Your Opinion</h2>
+        
+    </header>
+    
+    <main>
+        <section id="feedback-form">
+            <h3>Share Your Feedback</h3>
+            <p>We greatly appreciate your thoughts and suggestions. Please take a moment to provide us with your feedback:</p>
+            
+            <form action="submit_feedback.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+                
+                <label for="feedback">Your Feedback</label>
+                <textarea name="feedback" id="feedback" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="company.html">Company</a></li>
+            </ul>
+        </nav>
+        <p><small>Retro Radio Inc.</small></p>
+    </footer>
+</body>
+</html>

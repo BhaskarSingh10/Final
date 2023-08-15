@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Us | Retro Radio</title>
+    <meta name="author" content="Your Name" />
+    <meta name="description" content="Contact Retro Radio for any inquiries or feedback." />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+        header {
+            background-image: url('images/pexels-cottonbro-studio-4480537.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        header h1, header h2 {
+            margin: 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <h2>We'd Love to Hear from You</h2>
+       
+    </header>
+    
+    <main>
+        <section id="contact-form">
+            <h3>Contact Form</h3>
+            
+            <form action="submit_contact.php" method="post">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="name" required />
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+                
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" required />
+                
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="company.html">Company</a></li>
+            </ul>
+        </nav>
+        <p><small>Retro Radio Inc.</small></p>
+    </footer>
+</body>
+</html>
